@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    background-color: #bcaaa4;
+    background-image: linear-gradient(
+      to right top,
+      #051937,
+      #004976,
+      #007f9f,
+      #00b7a1,
+      #12eb7e
+    );
+    /* background-image: linear-gradient(
+      to right top,
+      #7b8798,
+      #7692ae,
+      #699fc4,
+      #51acd9,
+      #12baeb
+    ); */
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Nunito", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+  
+  form{
+      margin: 100px auto;
+  }
+  h2{
+    text-align: center;
+  }
