@@ -1,5 +1,5 @@
-## DEMO: https://vue-stripe-55803.firebaseapp.com
-### Here are some dummy CC numbers and CVV codes to test the form:
+### DEMO: https://vue-stripe-55803.firebaseapp.com
+### You can find some dummy CC numbers & CVV codes here to test the form:
 https://demo.tutorialzine.com/2016/11/simple-credit-card-validation-form/
 
 # vue-stripe
