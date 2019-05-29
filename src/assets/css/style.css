@@ -9,9 +9,7 @@
     padding: 0;
   }
   html {
-    /* background-color: #bcaaa4; */
-    /* background-image: linear-gradient(to right top,#051937,#004976,#007f9f,#00b7a1,#12eb7e); */
-    background: rgb(12,4,149);
+    background: #0c0495;
     background: var(--gradient);
     background-size: cover;
     background-position: center;
@@ -33,7 +31,41 @@
     font-family: "Nunito", sans-serif;
     color: #0d1f70;
   }
-
+  
+  .help-block {
+    color: red;
+    font-size: 13px;
+  }
+  
+  label.uk-form-label {
+    color: blue;
+  }
+  
+  button.uk-button-primary {
+    color: #fff;
+    font-weight: bold;
+    background-color: #1e87f0;
+    margin: 0px 10px;
+    
+  }
+  button.uk-button-default {
+    color: #fff;
+    font-weight: bold;
+    background-color: #c71717;
+    margin: 0px 5px;
+    
+  }
+  
+  #card-number,
+  #card-cvc,
+  #card-expiry {
+    padding-top: 10px;
+  } 
+  
+  .stripeError {
+    color: red;
+    font-style: italic;
+  }
   @media only screen and (max-width: 600px)  {
    .uk-width-large {
     width: 90%;

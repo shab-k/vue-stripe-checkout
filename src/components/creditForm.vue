@@ -1,5 +1,4 @@
 <template>
-<!-- <div class="container"> -->
 <div id="app" v-cloak>
    <div class="uk-align-center uk-margin uk-width-large uk-background-muted uk-box-shadow-large">
     <form @submit="checkForm()" class="uk-padding" action="" method="post">
@@ -8,6 +7,8 @@
           <p class="stripeError" v-if="stripeError">{{ stripeError }}</p>
       </div> 
         <!-- Name -->
+        <!-- Name didn't work with stripe elements -->
+        <!-- Couldn't use input tag since I received an error related to Stripe, so I couldn't use materialize CSS -->
          <div class="uk-margin uk-text-left">
           <p v-if="errors.length">
             <ul>
@@ -20,7 +21,6 @@
               <span class="help-block" v-if="cardNameError">{{cardNameError}}</span>
             </div>
           </div> 
-
           <!-- Card -->
          <div class="uk-width-2-3@s uk-margin uk-text-left">
             <label class="uk-form-label" for="Card Number"> <i class="fas fa-credit-card"></i> Card Number</label>
@@ -30,9 +30,6 @@
               <span class="help-block" v-if="cardNumberError">{{cardNumberError}}</span>
             </div>
           </div> 
-          <!-- <span uk-icon="icon: check"></span>
-              
-               -->
           <div class="uk-grid-small uk-text-left" uk-grid>
             <!-- CVC -->
             <div class="uk-width-1-2@s">
@@ -59,7 +56,6 @@
       </form>
     </div>
   </div>
-  <!-- </div> -->
 </template>
 
 <script>
@@ -104,7 +100,7 @@ export default {
       }
       this.errors = [];
       if (this.name === '') {
-        this.errors.push("Name required");
+        this.errors.push("Name required!");
       }
       e.preventDefault();
     },
@@ -134,7 +130,7 @@ export default {
         const vm = this;
 
         // this.cardName.addEventListener('change', (event) => {
-        //   vm.setOutcome(event);
+        //   vm.toggleError(event);
         //   vm.cardNameError = ''
         //   vm.card.name = event.complete ? true : false
         // });
@@ -232,42 +228,7 @@ export default {
 
 
 <style>
-  [v-cloak] {
-  display: none;
-}
-
-.help-block {
-  color: red;
-  font-size: 13px;
-}
-
-label.uk-form-label {
-  color: blue;
-}
-
-button.uk-button-primary {
-  color: #fff;
-  font-weight: bold;
-  background-color: #1e87f0;
-  margin: 0px 10px;
-  
-}
-button.uk-button-default {
-  color: #fff;
-  font-weight: bold;
-  background-color: #c71717;
-  margin: 0px 5px;
-  
-}
-
-#card-number,
-#card-cvc,
-#card-expiry {
-  padding-top: 10px;
-} 
-
-.stripeError {
-  color: red;
-  font-style: italic;
-}
+ [v-cloak] {
+    display: none;
+  }
 </style>
