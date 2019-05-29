@@ -1,27 +1,18 @@
+/* Variables */
+:root{
+  --gradient: linear-gradient(90deg, rgba(12,4,149,1) 0%, rgba(8,8,122,1) 32%, rgba(255,12,0,1) 100%);
+}
+/* CSS Reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   html {
-    background-color: #bcaaa4;
-    background-image: linear-gradient(
-      to right top,
-      #051937,
-      #004976,
-      #007f9f,
-      #00b7a1,
-      #12eb7e
-    );
-    /* background-image: linear-gradient(
-      to right top,
-      #7b8798,
-      #7692ae,
-      #699fc4,
-      #51acd9,
-      #12baeb
-    ); */
-   
+    /* background-color: #bcaaa4; */
+    /* background-image: linear-gradient(to right top,#051937,#004976,#007f9f,#00b7a1,#12eb7e); */
+    background: rgb(12,4,149);
+    background: var(--gradient);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,8 +26,16 @@
   }
   
   form{
-      margin: 100px auto;
+      margin: 30% auto;
   }
   h2{
     text-align: center;
+    font-family: "Nunito", sans-serif;
+    color: #0d1f70;
+  }
+
+  @media only screen and (max-width: 600px)  {
+   .uk-width-large {
+    width: 90%;
+    }
   }
