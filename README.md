@@ -1,3 +1,4 @@
+# DEMO: https://vue-stripe-55803.firebaseapp.com
 # vue-stripe
 
 ## Project setup
