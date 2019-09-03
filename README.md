@@ -1,4 +1,4 @@
-### DEMO: https://vue-stripe-55803.firebaseapp.com
+#### DEMO: https://vue-stripe-55803.firebaseapp.com
 ### You can find some dummy CC numbers & CVV codes here to test the form:
 https://demo.tutorialzine.com/2016/11/simple-credit-card-validation-form/
 
